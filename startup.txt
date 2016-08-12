@@ -1,55 +1,48 @@
-Found populator: org.glassfish.kernel.embedded.EmbeddedDomainXml
-Aug 12, 2016 11:56:14 AM org.glassfish.security.services.impl.authorization.AuthorizationServiceImpl initialize
+Aug 12, 2016 2:13:13 PM org.glassfish.security.services.impl.authorization.AuthorizationServiceImpl initialize
 INFO: Authorization Service has successfully initialized.
-Aug 12, 2016 11:56:14 AM org.hibernate.validator.internal.util.Version <clinit>
+Aug 12, 2016 2:13:13 PM org.hibernate.validator.internal.util.Version <clinit>
 INFO: HV000001: Hibernate Validator 5.1.2.Final
-Aug 12, 2016 11:56:15 AM org.glassfish.grizzly.config.Utils newInstance
-WARNING: Instance could not be initialized. Class=interface org.glassfish.grizzly.http.server.AddOn, name=http-listener, realClassName=org.glassfish.grizzly.http2.Http2AddOn
-Aug 12, 2016 11:56:15 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
-INFO: Grizzly Framework 2.3.21 started in: 16ms - bound to [/0.0.0.0:8085]
-Aug 12, 2016 11:56:15 AM org.glassfish.grizzly.config.Utils newInstance
-WARNING: Instance could not be initialized. Class=interface org.glassfish.grizzly.http.server.AddOn, name=https-listener, realClassName=org.glassfish.grizzly.http2.Http2AddOn
-Aug 12, 2016 11:56:15 AM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
-INFO: Grizzly Framework 2.3.21 started in: 4ms - bound to [/0.0.0.0:8086]
-Aug 12, 2016 11:56:15 AM com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+Aug 12, 2016 2:13:14 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Grizzly Framework 2.3.24 started in: 17ms - bound to [/0.0.0.0:8085]
+Aug 12, 2016 2:13:14 PM com.sun.enterprise.v3.services.impl.GrizzlyProxy start0
+INFO: Grizzly Framework 2.3.24 started in: 1ms - bound to [/0.0.0.0:8086]
+Aug 12, 2016 2:13:14 PM com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
 INFO: Admin Console Adapter: context root: /admin
-Aug 12, 2016 11:56:15 AM com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+Aug 12, 2016 2:13:14 PM com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
 INFO: Admin Console Adapter: context root: /admin
-Aug 12, 2016 11:56:15 AM com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
+Aug 12, 2016 2:13:14 PM com.sun.enterprise.v3.admin.adapter.AdminEndpointDecider setGuiContextRoot
 INFO: Admin Console Adapter: context root: /admin
-Aug 12, 2016 11:56:15 AM com.sun.enterprise.connectors.jms.util.JmsRaUtil getInstalledMqVersion
-WARNING: jmsra.upgrade_check_failed
-Aug 12, 2016 11:56:18 AM com.sun.enterprise.v3.server.AppServerStartup postStartupJob
-INFO: Undefined Product Name - define product and version info in config/branding  0.0.0.0.0  (0) startup time : Embedded (1,116ms), startup services(3,702ms), total(4,818ms)
-Aug 12, 2016 11:56:18 AM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
+Aug 12, 2016 2:13:14 PM com.sun.enterprise.v3.server.AppServerStartup postStartupJob
+INFO: Undefined Product Name - define product and version info in config/branding  0.0.0.0.0  (0) startup time : Embedded (1,086ms), startup services(865ms), total(1,951ms)
+Aug 12, 2016 2:13:14 PM fish.payara.nucleus.util.CleanupPostBoot event
+INFO: Cleaning JarFileFactory Cache to prevent jar FD leaks
+Aug 12, 2016 2:13:14 PM org.glassfish.admin.mbeanserver.JMXStartupService$JMXConnectorsStarterThread run
 INFO: JMXStartupService has disabled JMXConnector system
-Aug 12, 2016 11:56:18 AM org.bug.PayaraBootstrap main
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.connectors.jms.util.JmsRaUtil getInstalledMqVersion
+WARNING: jmsra.upgrade_check_failed
+Aug 12, 2016 2:13:15 PM org.bug.PayaraBootstrap main
 INFO: exit status for the addition of custom resource: SUCCESS
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.SecurityLifecycle <init>
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.SecurityLifecycle <init>
 INFO: Java security manager is disabled.
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.SecurityLifecycle onInitialization
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
 INFO: Entering Security Startup Service.
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.PolicyLoader loadPolicy
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.PolicyLoader loadPolicy
 INFO: Loading policy provider com.sun.enterprise.security.jacc.provider.SimplePolicyProvider.
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
 INFO: Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
 INFO: Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.auth.realm.Realm doInstantiate
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.auth.realm.Realm doInstantiate
 INFO: Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.
-Aug 12, 2016 11:56:19 AM com.sun.enterprise.security.SecurityLifecycle onInitialization
+Aug 12, 2016 2:13:15 PM com.sun.enterprise.security.SecurityLifecycle onInitialization
 INFO: Security Service(s) started successfully.
-Aug 12, 2016 11:56:19 AM com.sun.ejb.containers.BaseContainer initializeHome
+Aug 12, 2016 2:13:15 PM com.sun.ejb.containers.BaseContainer initializeHome
 INFO: Portable JNDI names for EJB InjectResource: [java:global/resource-bug-0.0.1-SNAPSHOT/InjectResource!bug.InjectResource, java:global/resource-bug-0.0.1-SNAPSHOT/InjectResource]
-Aug 12, 2016 11:56:19 AM org.jboss.weld.bootstrap.WeldStartup <clinit>
-INFO: WELD-000900: SNAPSHOT
-Aug 12, 2016 11:56:19 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-WARN: WELD-000411: Observer method [BackedAnnotatedMethod] public org.glassfish.jms.injection.JMSCDIExtension.processAnnotatedType(@Observes ProcessAnnotatedType<Object>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-Aug 12, 2016 11:56:20 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-WARN: WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType<Object>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-Aug 12, 2016 11:56:20 AM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
-WARN: WELD-000411: Observer method [BackedAnnotatedMethod] org.glassfish.sse.impl.ServerSentEventCdiExtension.processAnnotatedType(@Observes ProcessAnnotatedType<Object>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
-Aug 12, 2016 11:56:20 AM org.glassfish.internal.data.ModuleInfo start
+Aug 12, 2016 2:13:15 PM org.jboss.weld.bootstrap.WeldStartup <clinit>
+INFO: WELD-000900: 2.3.2 (Final)
+Aug 12, 2016 2:13:16 PM org.jboss.weld.event.ExtensionObserverMethodImpl checkRequiredTypeAnnotations
+INFO: WELD-000411: Observer method [BackedAnnotatedMethod] private org.glassfish.jersey.ext.cdi1x.internal.CdiComponentProvider.processAnnotatedType(@Observes ProcessAnnotatedType) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+Aug 12, 2016 2:13:16 PM org.glassfish.internal.data.ModuleInfo start
 SEVERE: Exception while invoking class org.glassfish.ejb.startup.EjbApplication start method
 javax.ejb.EJBException: javax.ejb.CreateException: Initialization failed for Singleton InjectResource
 	at com.sun.ejb.containers.AbstractSingletonContainer$SingletonContextFactory.create(AbstractSingletonContainer.java:649)
@@ -57,13 +50,13 @@ javax.ejb.EJBException: javax.ejb.CreateException: Initialization failed for Sin
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.initializeSingleton(SingletonLifeCycleManager.java:219)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.initializeSingleton(SingletonLifeCycleManager.java:180)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.doStartup(SingletonLifeCycleManager.java:158)
-	at org.glassfish.ejb.startup.EjbApplication.start(EjbApplication.java:166)
+	at org.glassfish.ejb.startup.EjbApplication.start(EjbApplication.java:169)
 	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:122)
 	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:291)
-	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:352)
-	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:500)
-	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
-	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:353)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:501)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:220)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:487)
 	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
 	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -81,7 +74,7 @@ javax.ejb.EJBException: javax.ejb.CreateException: Initialization failed for Sin
 	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
 	at org.bug.PayaraBootstrap.main(PayaraBootstrap.java:36)
 Caused by: javax.ejb.CreateException: Initialization failed for Singleton InjectResource
-	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:477)
+	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:476)
 	at com.sun.ejb.containers.AbstractSingletonContainer.access$000(AbstractSingletonContainer.java:74)
 	at com.sun.ejb.containers.AbstractSingletonContainer$SingletonContextFactory.create(AbstractSingletonContainer.java:647)
 	... 27 more
@@ -91,7 +84,7 @@ Caused by: java.lang.IllegalStateException: Exception attempting to inject Env-P
 	at org.jboss.weld.injection.producer.DefaultInjector.inject(DefaultInjector.java:73)
 	at org.jboss.weld.injection.producer.ejb.SessionBeanInjectionTarget.inject(SessionBeanInjectionTarget.java:140)
 	at org.glassfish.weld.services.JCDIServiceImpl.injectEJBInstance(JCDIServiceImpl.java:257)
-	at com.sun.ejb.containers.BaseContainer.injectEjbInstance(BaseContainer.java:1748)
+	at com.sun.ejb.containers.BaseContainer.injectEjbInstance(BaseContainer.java:1749)
 	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:436)
 	... 29 more
 Caused by: com.sun.enterprise.container.common.spi.util.InjectionException: Exception attempting to inject Env-Prop: bug.InjectResource/customResource@Field-Injectable Resource. Class name = bug.InjectResource Field name=customResource@java.lang.String@@@ into class bug.InjectResource: Can not set java.lang.String field bug.InjectResource.customResource to javax.naming.Reference
@@ -108,7 +101,7 @@ Caused by: java.lang.IllegalArgumentException: Can not set java.lang.String fiel
 	at com.sun.enterprise.container.common.impl.util.InjectionManagerImpl._inject(InjectionManagerImpl.java:688)
 	... 38 more
 
-Aug 12, 2016 11:56:20 AM com.sun.enterprise.v3.server.ApplicationLifecycle deploy
+Aug 12, 2016 2:13:16 PM com.sun.enterprise.v3.server.ApplicationLifecycle deploy
 SEVERE: Exception during lifecycle processing
 javax.ejb.EJBException: javax.ejb.CreateException: Initialization failed for Singleton InjectResource
 	at com.sun.ejb.containers.AbstractSingletonContainer$SingletonContextFactory.create(AbstractSingletonContainer.java:649)
@@ -116,13 +109,13 @@ javax.ejb.EJBException: javax.ejb.CreateException: Initialization failed for Sin
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.initializeSingleton(SingletonLifeCycleManager.java:219)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.initializeSingleton(SingletonLifeCycleManager.java:180)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.doStartup(SingletonLifeCycleManager.java:158)
-	at org.glassfish.ejb.startup.EjbApplication.start(EjbApplication.java:166)
+	at org.glassfish.ejb.startup.EjbApplication.start(EjbApplication.java:169)
 	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:122)
 	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:291)
-	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:352)
-	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:500)
-	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
-	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:353)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:501)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:220)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:487)
 	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
 	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -140,7 +133,7 @@ javax.ejb.EJBException: javax.ejb.CreateException: Initialization failed for Sin
 	at com.sun.enterprise.admin.cli.embeddable.DeployerImpl.deploy(DeployerImpl.java:134)
 	at org.bug.PayaraBootstrap.main(PayaraBootstrap.java:36)
 Caused by: javax.ejb.CreateException: Initialization failed for Singleton InjectResource
-	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:477)
+	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:476)
 	at com.sun.ejb.containers.AbstractSingletonContainer.access$000(AbstractSingletonContainer.java:74)
 	at com.sun.ejb.containers.AbstractSingletonContainer$SingletonContextFactory.create(AbstractSingletonContainer.java:647)
 	... 27 more
@@ -150,7 +143,7 @@ Caused by: java.lang.IllegalStateException: Exception attempting to inject Env-P
 	at org.jboss.weld.injection.producer.DefaultInjector.inject(DefaultInjector.java:73)
 	at org.jboss.weld.injection.producer.ejb.SessionBeanInjectionTarget.inject(SessionBeanInjectionTarget.java:140)
 	at org.glassfish.weld.services.JCDIServiceImpl.injectEJBInstance(JCDIServiceImpl.java:257)
-	at com.sun.ejb.containers.BaseContainer.injectEjbInstance(BaseContainer.java:1748)
+	at com.sun.ejb.containers.BaseContainer.injectEjbInstance(BaseContainer.java:1749)
 	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:436)
 	... 29 more
 Caused by: com.sun.enterprise.container.common.spi.util.InjectionException: Exception attempting to inject Env-Prop: bug.InjectResource/customResource@Field-Injectable Resource. Class name = bug.InjectResource Field name=customResource@java.lang.String@@@ into class bug.InjectResource: Can not set java.lang.String field bug.InjectResource.customResource to javax.naming.Reference
@@ -167,25 +160,25 @@ Caused by: java.lang.IllegalArgumentException: Can not set java.lang.String fiel
 	at com.sun.enterprise.container.common.impl.util.InjectionManagerImpl._inject(InjectionManagerImpl.java:688)
 	... 38 more
 
-Aug 12, 2016 11:56:20 AM org.glassfish.api.ActionReport failure
+Aug 12, 2016 2:13:16 PM org.glassfish.api.ActionReport failure
 SEVERE: Exception while loading the app
-Aug 12, 2016 11:56:20 AM org.glassfish.deployment.admin.DeployCommand execute
+Aug 12, 2016 2:13:16 PM org.glassfish.deployment.admin.DeployCommand execute
 SEVERE: Exception while loading the app : javax.ejb.CreateException: Initialization failed for Singleton InjectResource
 javax.ejb.CreateException: Initialization failed for Singleton InjectResource
-	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:477)
+	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:476)
 	at com.sun.ejb.containers.AbstractSingletonContainer.access$000(AbstractSingletonContainer.java:74)
 	at com.sun.ejb.containers.AbstractSingletonContainer$SingletonContextFactory.create(AbstractSingletonContainer.java:647)
 	at com.sun.ejb.containers.AbstractSingletonContainer.instantiateSingletonInstance(AbstractSingletonContainer.java:389)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.initializeSingleton(SingletonLifeCycleManager.java:219)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.initializeSingleton(SingletonLifeCycleManager.java:180)
 	at org.glassfish.ejb.startup.SingletonLifeCycleManager.doStartup(SingletonLifeCycleManager.java:158)
-	at org.glassfish.ejb.startup.EjbApplication.start(EjbApplication.java:166)
+	at org.glassfish.ejb.startup.EjbApplication.start(EjbApplication.java:169)
 	at org.glassfish.internal.data.EngineRef.start(EngineRef.java:122)
 	at org.glassfish.internal.data.ModuleInfo.start(ModuleInfo.java:291)
-	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:352)
-	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:500)
-	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:219)
-	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:491)
+	at org.glassfish.internal.data.ApplicationInfo.start(ApplicationInfo.java:353)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:501)
+	at com.sun.enterprise.v3.server.ApplicationLifecycle.deploy(ApplicationLifecycle.java:220)
+	at org.glassfish.deployment.admin.DeployCommand.execute(DeployCommand.java:487)
 	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:539)
 	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:535)
 	at java.security.AccessController.doPrivileged(Native Method)
@@ -208,7 +201,7 @@ Caused by: java.lang.IllegalStateException: Exception attempting to inject Env-P
 	at org.jboss.weld.injection.producer.DefaultInjector.inject(DefaultInjector.java:73)
 	at org.jboss.weld.injection.producer.ejb.SessionBeanInjectionTarget.inject(SessionBeanInjectionTarget.java:140)
 	at org.glassfish.weld.services.JCDIServiceImpl.injectEJBInstance(JCDIServiceImpl.java:257)
-	at com.sun.ejb.containers.BaseContainer.injectEjbInstance(BaseContainer.java:1748)
+	at com.sun.ejb.containers.BaseContainer.injectEjbInstance(BaseContainer.java:1749)
 	at com.sun.ejb.containers.AbstractSingletonContainer.createSingletonEJB(AbstractSingletonContainer.java:436)
 	... 29 more
 Caused by: com.sun.enterprise.container.common.spi.util.InjectionException: Exception attempting to inject Env-Prop: bug.InjectResource/customResource@Field-Injectable Resource. Class name = bug.InjectResource Field name=customResource@java.lang.String@@@ into class bug.InjectResource: Can not set java.lang.String field bug.InjectResource.customResource to javax.naming.Reference
@@ -224,3 +217,5 @@ Caused by: java.lang.IllegalArgumentException: Can not set java.lang.String fiel
 	at java.lang.reflect.Field.set(Field.java:764)
 	at com.sun.enterprise.container.common.impl.util.InjectionManagerImpl._inject(InjectionManagerImpl.java:688)
 	... 38 more
+
+
