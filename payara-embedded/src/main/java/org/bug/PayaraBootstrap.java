@@ -20,24 +20,41 @@ public class PayaraBootstrap
 
 	public static void main(String[] args) throws IOException {
 		try {
-			BootstrapProperties bootstrap = new BootstrapProperties();
-			GlassFishRuntime runtime = GlassFishRuntime.bootstrap();
-			GlassFishProperties glassfishProperties = new GlassFishProperties();
-			glassfishProperties.setPort("http-listener", 8085);
-			glassfishProperties.setPort("https-listener", 8086);
-			GlassFish glassfish = runtime.newGlassFish(glassfishProperties);
-			glassfish.start();
-			CommandRunner runner = glassfish.getCommandRunner();
-			CommandResult result = runner.run("create-custom-resource", "--restype", "java.lang.String",
-					"--factoryclass", "org.glassfish.resources.custom.factory.PrimitivesAndStringFactor", "--property",
-					"value=wontshow", "customResource");
-			LOGGER.log(Level.INFO, "exit status for the addition of custom resource: " + result.getExitStatus().name(),
-					result);
-			glassfish.getDeployer().deploy(new File("../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
+			GlassFish glassfish = bootstrapAndStartServer();
+			createCustomResource(glassfish);
+			deployServiceTo(glassfish);
 		}
 
 		catch (GlassFishException ex) {
 			LOGGER.log(Level.FINE, null, ex);
 		}
+	}
+
+	private static GlassFish bootstrapAndStartServer() throws GlassFishException {
+		BootstrapProperties bootstrap = new BootstrapProperties();
+		GlassFishRuntime runtime = GlassFishRuntime.bootstrap();
+		GlassFishProperties glassfishProperties = new GlassFishProperties();
+		glassfishProperties.setPort("http-listener", 8085);
+		glassfishProperties.setPort("https-listener", 8086);
+		GlassFish glassfish = runtime.newGlassFish(glassfishProperties);
+		glassfish.start();
+		return glassfish;
+	}
+
+	private static void createCustomResource(GlassFish glassfish) throws GlassFishException {
+		CommandRunner runner = glassfish.getCommandRunner();
+		CommandResult result = runner.run("create-custom-resource", "--restype", "java.lang.String",
+				"--factoryclass", "org.glassfish.resources.custom.factory.PrimitivesAndStringFactor", "--property",
+				"value=wontshow", "customResource");
+		LOGGER.log(Level.INFO, "exit status for the addition of custom resource: " + result.getExitStatus().name(),
+				result);
+	}
+	
+	private static void deployServiceTo(GlassFish glassfish) throws GlassFishException {
+		// when starting the jar on the command line in target : java -jar payara-embedded-0.0.1-SNAPSHOT.jar
+		//glassfish.getDeployer().deploy(new File("../../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
+		
+		// when starting the jar from the IDE
+		glassfish.getDeployer().deploy(new File("../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
 	}
 }
