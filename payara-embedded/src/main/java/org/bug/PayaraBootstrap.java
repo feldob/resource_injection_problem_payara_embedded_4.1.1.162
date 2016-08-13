@@ -52,9 +52,9 @@ public class PayaraBootstrap
 	
 	private static void deployServiceTo(GlassFish glassfish) throws GlassFishException {
 		// when starting the jar on the command line in target : java -jar payara-embedded-0.0.1-SNAPSHOT.jar
-		//glassfish.getDeployer().deploy(new File("../../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
+		glassfish.getDeployer().deploy(new File("../../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
 		
 		// when starting the jar from the IDE
-		glassfish.getDeployer().deploy(new File("../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
+//		glassfish.getDeployer().deploy(new File("../resource-bug/target/resource-bug-0.0.1-SNAPSHOT.jar"));
 	}
 }

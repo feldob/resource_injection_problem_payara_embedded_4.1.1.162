@@ -10,7 +10,10 @@
 
 	<name>resource-bug</name>
 	<artifactId>resource-bug</artifactId>
+<<<<<<< HEAD
 	<version>0.0.1-snapshot</version>
+=======
+>>>>>>> recreated
 	<packaging>ejb</packaging>
 
 	<build>
