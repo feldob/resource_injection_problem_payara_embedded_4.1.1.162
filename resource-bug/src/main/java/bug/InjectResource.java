@@ -31,6 +31,5 @@ public class InjectResource {
 	@PostConstruct
 	private void initValues() {
 		Logger.getLogger(InjectResource.class.getName()).log(Level.WARNING, "The String will only show if not injected: " + customResource, customResource);
-		;
 	}
 }
